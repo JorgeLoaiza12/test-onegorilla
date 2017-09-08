@@ -14,6 +14,7 @@ Como ejecutar el proyecto:
 >  `cd server`
 + Inicianmos el servidor ejecutando dentro de la carpeta "server", el siguiente comando:
 >  `node server`
+
 > *** Nota:** Una vez el servidor inicie debe mostrarnos en la consola el siguiente mensaje **Server listening on port 3000**
 
 + Abrimos una nueva terminal sin cerrar el servidor y nos vamos a la raiz de nuestro proyecto y ejecutamos el servidor de Angular 4 con el siguiente comando:
