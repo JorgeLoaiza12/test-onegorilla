@@ -18,3 +18,5 @@ Como ejecutar el proyecto:
 
 + Abrimos una nueva terminal sin cerrar el servidor y nos vamos a la raiz de nuestro proyecto y ejecutamos el servidor de Angular 4 con el siguiente comando:
 + >  `ng server`
+
+Una vez tengamos estos pasos entramos a la siguiente dirección: http://localhost:4200/

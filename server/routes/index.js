@@ -64,6 +64,7 @@ module.exports = function(app, db) {
     // Create Record
     app.post('/api/records', (req, res) => {
         let body = req.body;
+        console.log(body);
         let verifyResult = body.valueM.split(",");
         if(verifyResult.length == 1) {
             if(parseInt(body.valueN) == parseInt(body.valueM)) {
