@@ -1,0 +1,22 @@
+<h2 class="text-center">Registros:</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Email</th>
+      <th>Valor N</th>
+      <th>Valor M</th>
+      <th>Resultado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let record of records">
+      <td>{{ record.name }}</td>
+      <td>{{ record.email }}</td>
+      <td>{{ record.valueN }}</td>
+      <td>{{ record.valueM }}</td>
+      <td>{{ record.result == true ? 'Verdadero' : 'Falso' }}</td>
+    </tr>
+  </tbody>
+</table>

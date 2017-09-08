@@ -1,0 +1,26 @@
+<h2>Agregar nuevo registro:</h2>
+<form>
+  <div class="form-group">
+    <label for="">Nombre</label>
+    <input class="form-control"  [(ngModel)]="newRecord.name" placeholder="Name" name="name">
+  </div>  
+  <div class="form-group">
+    <label for="">Email</label>
+    <input class="form-control" [(ngModel)]="newRecord.email" placeholder="email" name="email">
+    <div class="color-red" *ngIf="errorForm">Email already exists!</div>
+  </div>
+  <div class="form-group">
+    <label for="">Valor N</label>
+    <input 
+      onkeypress='return event.charCode >= 48 && event.charCode <= 57' 
+      class="form-control" [(ngModel)]="newRecord.valueN" placeholder="Valor N" name="valueN"
+    >
+  </div>
+  <div class="form-group">
+    <label for="">Valor M</label>
+    <input 
+    onkeypress='return /\d+|,+|[/b]+/i.test(event.key)'
+    class="form-control" [(ngModel)]="newRecord.valueM" placeholder="Valor M" name="valueM">
+  </div>
+  <button class="btn btn-primary" (click)="createRecord(newRecord)">Create Record</button>
+</form>
